@@ -1,14 +1,8 @@
 /*
-This Code has extra features 
-including a XY positioning function on Display
-and a Line Draw function on Nokia 3310 LCD 
-It is modded from the original 
-http://playground.arduino.cc/Code/PCD8544
+ * This Code is modded by Jim Park (jim(^dOt^)buzz(^aT^)gmail(^dOt^)com )from the original 
+ * http://playground.arduino.cc/Code/PCD8544
 */
-// Mods by Jim Park 
-// jim(^dOt^)buzz(^aT^)gmail(^dOt^)com
-// hope it works for you
-// from http://playground.arduino.cc/Code/PCD8544
+
 
 #include <avr/sleep.h>
 
