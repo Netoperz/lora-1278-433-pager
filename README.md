@@ -7,23 +7,29 @@ Button one is used to switch backlight on and off, and reset/delete all messages
 Button two is used to see new Messages and iterate through new ones
 
 Connections:
-  A beeper to GND and Pin 6
-  A Button to GND and Pin 15
-  A Button to GND and Pin 17
-  Nokia 5110 LCD to:
-    CE  on Pin 10
-    RST on Pin 9
-    DC  on Pin 11
-    CLK on Pin 13
-    DIN on Pin 12
-    BL  on Pin 8
-    VCC to 3.3V
-    GND to GND
+
+  Dev | Pins
+  ----------|--------------
+  A beeper | GND and Pin 6
+  A Button | GND and Pin 15
+  A Button | GND and Pin 17
+
+  Nokia 5110 LCD | to:
+  ---------|-----------
+    CE  | Pin 10
+    RST | Pin 9
+    DC  | Pin 11
+    CLK | Pin 13
+    DIN | Pin 12
+    BL  | Pin 8
+    VCC | 3.3V
+    GND | GND
   
-  DRF1278DM LORAmote to:
-    GND on GND
-    VCC on 5V
-    RXD on Pin 1
-    TXD on PIN 0
-    SET on Pin 2 (unused right now, should be used as wake up interrupt)
+  DRF1278DM LORAmote | to:
+  -------------|------------
+    GND | GND
+    VCC | 5V
+    RXD | Pin 1
+    TXD | PIN 0
+    SET | Pin 2 (unused right now, should be used to trigger wake up interrupt)
   
