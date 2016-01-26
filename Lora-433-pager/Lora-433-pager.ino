@@ -1,5 +1,7 @@
 /*
- * This Code is modded by Jim Park (jim(^dOt^)buzz(^aT^)gmail(^dOt^)com )from the original 
+ * This code is modded from the modded code by 
+ * Jim Park (jim(^dOt^)buzz(^aT^)gmail(^dOt^)com )
+ * from the original  
  * http://playground.arduino.cc/Code/PCD8544
 */
 
@@ -26,7 +28,7 @@
 #define LCD_Y     48
 #define LCD_CMD   0
 
-#define MAXMSG 10
+#define MAXMSG 25
 
 int wakePin = 2;                 // pin used for waking up
 int sleepStatus = 0;             // variable to store a request for sleep
@@ -43,7 +45,7 @@ int mcounter=0; //message counter
 int totalcounter=0; //message counter
 int dispcounter=0;  //displayed massage
 int old_dispcounter=-1;
-String messagequeue[MAXMSG];//holds at max 10 messages
+String messagequeue[MAXMSG];//holds at max 25 messages
 
 static const byte ASCII[][5] =
 {
