@@ -432,17 +432,18 @@ void loop(void){
      while (digitalRead(PIN_BUL) == LOW){
       button_delay++;
       delay(100);
+      if(button_delay>10)
+        reset();
       //Serial.println("holding");
       //Serial.println(button_delay);
     }
     if(button_delay<10)
       switch_light();
-    else
-      reset();
   }
 
   if (digitalRead(PIN_BUR) == LOW) {
      count=0;
+     scrollPosition=-10;
      switch(buttonMode){
       case 0: newMessage=false; old_dispcounter=-1; break; // read
       case 1: if(totalcounter>10)
